@@ -6,7 +6,9 @@ function StateHookCounter() {
   return (
     <div>
       <h3>counter with state hook</h3>
-      <button onClick={() => setCount(count + 1)}>Count: {count}</button>
+      <button onClick={() => setCount((prevCount) => prevCount + 1)}>
+        Count: {count}
+      </button>
     </div>
   );
 }
