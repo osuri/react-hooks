@@ -8,6 +8,7 @@ import DataFetching from "./components/DataFetching";
 import DataFetechingTwo from "./components/DataFetechingTwo";
 import ComponentC from "./components/ComponentC";
 import ReducerHook from "./components/ReducerHook";
+import ParentComponent from "./components/ParentComponent";
 
 export const userContext = React.createContext();
 
@@ -22,8 +23,9 @@ function App() {
       <userContext.Provider value={"lokesh"}>
         <ComponentC />
       </userContext.Provider> 
-      <ReducerHook /> */}
-      <DataFetechingTwo />
+      <ReducerHook /> 
+      <DataFetechingTwo /> */}
+      <ParentComponent />
     </div>
   );
 }
